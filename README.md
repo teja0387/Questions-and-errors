@@ -18,10 +18,10 @@ ERROR: Could not connect to SMTP host: localhost, port: 25
 javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 25;
 
 # project s2i
-WARNING: Exec Failure: HTTP 403, Status: 403 - User "system:serviceaccount:s2i:default" cannot watch buildconfigs in project "s2i"
-WARNING: Exec Failure: HTTP 403, Status: 403 - User "system:serviceaccount:s2i:default" cannot watch configmaps in project "s2i"
-SEVERE: Failed to load ConfigMaps: io.fabric8.kubernetes.client.KubernetesClientException: User "system:serviceaccount:s2i:default" cannot watch configmaps in project "s2i"
-SEVERE: Failed to load BuildConfigs: io.fabric8.kubernetes.client.KubernetesClientException: User "system:serviceaccount:s2i:default" cannot watch buildconfigs in project "s2i"
+#WARNING: Exec Failure: HTTP 403, Status: 403 - User "system:serviceaccount:s2i:default" cannot watch buildconfigs in project "s2i"
+#WARNING: Exec Failure: HTTP 403, Status: 403 - User "system:serviceaccount:s2i:default" cannot watch configmaps in project "s2i"
+#SEVERE: Failed to load ConfigMaps: io.fabric8.kubernetes.client.KubernetesClientException: User "system:serviceaccount:s2i:default" cannot watch configmaps in project "s2i"
+#SEVERE: Failed to load BuildConfigs: io.fabric8.kubernetes.client.KubernetesClientException: User "system:serviceaccount:s2i:default" cannot watch buildconfigs in project "s2i"
 WARNING: Exec Failure: HTTP 403, Status: 403 - User "system:serviceaccount:s2i:default" cannot watch secrets in project "s2i"
 java.net.ProtocolException: Expected HTTP 101 response but was '403 Forbidden'
 SEVERE: Failed to load ConfigMaps: io.fabric8.kubernetes.client.KubernetesClientException: User "system:serviceaccount:s2i:default" cannot watch secerts in project "s2i"
